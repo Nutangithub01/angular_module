@@ -1,0 +1,10 @@
+<h1>NESTED FOR LOOP USING <u>*ngFor</u></h1>
+
+<ul *ngFor = "let user of users">
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+    <li>Social Account</li>
+    <ul *ngFor ="let account of user.socialmedia">
+        <li>{{account}}</li>
+    </ul>
+</ul>
